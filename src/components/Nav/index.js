@@ -1,96 +1,69 @@
 import * as React from 'react';
 import logo from '../../logo.svg';
-import { AppBar, Box, Toolbar, IconButton, Typography } from '@mui/material';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
+import { AppBar, Toolbar, Box } from '@mui/material';
+import Link from '@mui/material/Link';
 
-const pages = ['HOME', 'ABOUT', 'PROJECTS', 'CONTACT'];
+const navLink = {
+  fontSize: 16,
+  color: 'common.white',
+  ml: 3,
+};
 
-const Nav = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+function Nav(props) {
+  const {
+    pages = [],
+    setCurrentPage,
+    currentPage,
+} = props;
 
   return (
-    <AppBar position="fixed">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Typography
+    <div>
+      <AppBar position="fixed">
+        <Toolbar sx={{ justifyContent: 'space-between' }}>
+          <Box sx={{ flex: 1 }} />
+          
+          <Link
             variant="h6"
-            noWrap
-            component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+            underline="none"
+            color="inherit"
+            href="/premium-themes/onepirate/"
           >
-            <img src={logo} className="App-logo" style={{ height: 75, width: 75 }} alt="logo" />
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
-          >
-            <img src={logo} className="App-logo" style={{ height: 75, width: 75 }} alt="logo" />
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            {<img src={logo} className="App-logo" style={{ height: 60, width: 60 }} alt="logo" />}
+          </Link>
+          <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+              <Link
+              color="inherit"
+              variant="h6"
+              underline="none"
+              sx={navLink}
               >
-                {page}
-              </Button>
+              {page.name}
+              </Link>
             ))}
+            <Link
+              color="inherit"
+              variant="h6"
+              underline="none"
+              href="/premium-themes/onepirate/sign-in/"
+              sx={navLink}
+            >
+              {'Sign In'}
+            </Link>
+            <Link
+              variant="h6"
+              underline="none"
+              href="/premium-themes/onepirate/sign-up/"
+              sx={navLink}
+            >
+              {'Sign Up'}
+            </Link>
           </Box>
         </Toolbar>
-      </Container>
-    </AppBar>
+      </AppBar>
+      <Toolbar />
+    </div>
   );
-};
+}
+
 export default Nav;
