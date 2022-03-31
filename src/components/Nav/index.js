@@ -19,7 +19,7 @@ function Nav(props) {
       {pages.map((page) => (
         <Link
           component="button"
-          color="inherit"
+          color="#BF8F00"
           variant="h6"
           underline="none"
           onClick={() =>  {
@@ -27,7 +27,6 @@ function Nav(props) {
           }} 
           sx={navLink}
         >
-        
         {page.name}
         </Link>
       ))}

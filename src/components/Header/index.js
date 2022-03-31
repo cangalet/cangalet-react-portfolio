@@ -26,7 +26,7 @@ function Header(props) {
           <Link
             variant="h6"
             underline="none"
-            color="inherit"
+            
             href="/"
           >
             {<img src={logo} className="App-logo" style={{ height: 60, width: 60 }} alt="logo" />} 

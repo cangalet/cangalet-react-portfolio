@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import About from './components/About';
 import Header from './components/Header';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -8,8 +10,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
+
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -17,7 +18,22 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const theme = createTheme();
+const theme = createTheme({
+  palette: {
+    primary: {
+      light: '#757ce8',
+      main: '#e3e3e3',
+      dark: '#002884',
+      contrastText: '#BF8F00',
+    },
+    secondary: {
+      light: '#d9a200',
+      main: '#BF8F00',
+      dark: '#856400',
+      contrastText: '#fff',
+    },
+  },
+});
 
 export default function App() {
   const [pages] = useState([
@@ -40,6 +56,7 @@ export default function App() {
       <main>
         {/* About unit */}
         {currentPage === 'About' && <About></About>}
+        {currentPage === 'Contact' && <Contact></Contact>}
         {/* End About unit */}
         <Container sx={{ py: 8 }} maxWidth="md">
           
@@ -77,6 +94,7 @@ export default function App() {
           </Grid>
         </Container>
       </main>
+      <Footer></Footer>
     </ThemeProvider>
   );
 }
