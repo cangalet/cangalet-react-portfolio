@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/cangalet-react-portfolio/static/css/main.58930845.css",
+    "main.js": "/cangalet-react-portfolio/static/js/main.8d242fc5.js",
+    "static/js/787.f9be751c.chunk.js": "/cangalet-react-portfolio/static/js/787.f9be751c.chunk.js",
+    "static/media/logo.svg": "/cangalet-react-portfolio/static/media/logo.75f9b9193095b3931e3416940ae6bf44.svg",
+    "index.html": "/cangalet-react-portfolio/index.html",
+    "main.58930845.css.map": "/cangalet-react-portfolio/static/css/main.58930845.css.map",
+    "main.8d242fc5.js.map": "/cangalet-react-portfolio/static/js/main.8d242fc5.js.map",
+    "787.f9be751c.chunk.js.map": "/cangalet-react-portfolio/static/js/787.f9be751c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58930845.css",
+    "static/js/main.8d242fc5.js"
+  ]
+}
