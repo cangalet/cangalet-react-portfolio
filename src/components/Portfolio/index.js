@@ -6,11 +6,46 @@ export default function Portfolio() {
     const portfolio = [
         {
             img: 'LearnIt-screenshot.png',
-            title: 'LEARN-IT',
+            title: 'Learn-IT',
             description: 'Coding Bootcamp Project 2: An interactive educational forum for exploring web development languages!',
             repo: 'https://github.com/ChristopherLawn/learn-code-work',
             live: 'https://damp-journey-96412.herokuapp.com/'
-        }, 2, 3, 4, 5, 6, 7, 8, 9
+        }, 
+        {
+            img: 'StreamView-screenshot',
+            title: 'Streamview',
+            description: 'Coding Bootcamp Project 1: Web application where an end user is able to search for a movie or tv show and see which streaming service that media is available to view on.',
+            repo: 'https://github.com/emdok/bang-imdb',
+            live: 'https://emdok.github.io/bang-imdb/'
+        }, 
+        {
+            img: 'StreamView-screenshot',
+            title: 'Weather Dashboard',
+            description: 'Coding Bootcamp Project 1: Web application where an end user is able to search for a movie or tv show and see which streaming service that media is available to view on.',
+            repo: 'https://github.com/emdok/bang-imdb',
+            live: 'https://emdok.github.io/bang-imdb/'
+        },
+        {
+            img: 'StreamView-screenshot',
+            title: 'Code Quiz',
+            description: 'Coding Bootcamp Project 1: Web application where an end user is able to search for a movie or tv show and see which streaming service that media is available to view on.',
+            repo: 'https://github.com/emdok/bang-imdb',
+            live: 'https://emdok.github.io/bang-imdb/'
+        },
+        {
+            img: 'StreamView-screenshot',
+            title: 'STREAMVIEW',
+            description: 'Coding Bootcamp Project 1: Web application where an end user is able to search for a movie or tv show and see which streaming service that media is available to view on.',
+            repo: 'https://github.com/emdok/bang-imdb',
+            live: 'https://emdok.github.io/bang-imdb/'
+        },
+        {
+            img: 'StreamView-screenshot',
+            title: 'Portfolio-V1',
+            description: 'Coding Bootcamp Project 1: Web application where an end user is able to search for a movie or tv show and see which streaming service that media is available to view on.',
+            repo: 'https://github.com/emdok/bang-imdb',
+            live: 'https://cangalet.github.io/chrisangalet/'
+        },
     ];
 
   return (
@@ -27,7 +62,7 @@ export default function Portfolio() {
                     // 16:9
                     pt: '56.25%',
                 }}
-                src=""
+                image="../../assets/img/LearnIt-screenshot.png"
                 alt={portfolio.title}
                 />
                 <CardContent sx={{ flexGrow: 1 }}>
@@ -39,8 +74,8 @@ export default function Portfolio() {
                 </Typography>
                 </CardContent>
                 <CardActions>
-                <Button size="small">View</Button>
-                <Button size="small">Edit</Button>
+                <Button color="secondary" size="small" href={portfolio.repo}>Repo</Button>
+                <Button color="secondary" size="small" href={portfolio.live}>Live</Button>
                 </CardActions>
             </Card>
             </Grid>
