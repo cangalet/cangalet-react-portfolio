@@ -35,3 +35,10 @@ export default function App() {
 }
 
 
+const [pages] = useState([
+  { name: 'About', href: '#about' },
+  { name: 'Portfolio', href: '#portfolio' },
+  { name: 'Contact', href: '#contact' },
+  { name: 'Resume', href: '#resume' }
+]);
+

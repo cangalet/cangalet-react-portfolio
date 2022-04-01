@@ -3,13 +3,10 @@ import About from './components/About';
 import Header from './components/Header';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
 import {Box, Container, CssBaseline} from '@mui/material';
-
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
-
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 const theme = createTheme({
   palette: {
@@ -29,6 +26,7 @@ const theme = createTheme({
 });
 
 export default function App() {
+  // States used to render page nav and page components
   const [pages] = useState([
     'About',
     'Portfolio',
@@ -58,8 +56,9 @@ export default function App() {
         {/* About unit */}
         {currentPage === 'About' && <About></About>}
         {currentPage === 'Contact' && <Contact></Contact>}
+        {currentPage === 'Portfolio' && <Portfolio></Portfolio>}
+        {currentPage === 'Resume' && <Resume></Resume>}
         {/* End About unit */}
-        <Portfolio></Portfolio>
         </main>
         </Container>
       </Box>

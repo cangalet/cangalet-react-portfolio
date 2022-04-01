@@ -5,17 +5,11 @@ import Link from '@mui/material/Link';
 import Nav from '../Nav';
 
 function Header(props) {
-  const [pages] = useState([
-    {
-      name: 'About',
-      description: 'Photos of grocery stores, food trucks, and other commercial projects',
-    },
-    { name: 'Portfolio', description: 'Portraits of people in my life' },
-    { name: 'Contact', description: 'Delicious delicacies' },
-    { name: 'Resume', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
-  ]);
-
-  const [currentPage, setCurrentPage] = useState(pages[0]);
+  const {
+    pages = [],
+    setCurrentPage,
+    currentPage,
+  } = props;
 
   return (
     <div>
@@ -26,17 +20,16 @@ function Header(props) {
           <Link
             variant="h6"
             underline="none"
-            
             href="/"
           >
             {<img src={logo} className="App-logo" style={{ height: 60, width: 60 }} alt="logo" />} 
           </Link>
           <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
             <Nav         
-            pages={pages}
-            currentPage={currentPage}
-            setCurrentPage={setCurrentPage}
-          ></Nav>
+              pages={pages}
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+            ></Nav>
           </Box>
         </Toolbar>
       </AppBar>

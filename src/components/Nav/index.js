@@ -1,13 +1,12 @@
-import * as React from 'react';
+import React from "react";
 import Link from '@mui/material/Link';
 
-const navLink = {
-  fontSize: 16,
-  color: 'common.white',
-  ml: 3,
-};
-
 function Nav(props) {
+  const navLink = {
+    fontSize: 16,
+    ml: 3,
+  };
+  
   const {
     pages = [],
     setCurrentPage,
@@ -16,36 +15,49 @@ function Nav(props) {
 
   return (
     <div>
-      {pages.map((page) => (
-        <Link
-          component="button"
-          color="#BF8F00"
-          variant="h6"
-          underline="none"
-          onClick={() =>  {
-            setCurrentPage(page)
-          }} 
-          sx={navLink}
-        >
-        {page.name}
-        </Link>
-      ))}
       <Link
         color="inherit"
         variant="h6"
         underline="none"
-        href="/premium-themes/onepirate/sign-in/"
+        href="#about"
+        onClick={() => setCurrentPage(pages[0])}
+        className={`${currentPage === "About" && "navActive"}`}
         sx={navLink}
       >
-        {'Sign In'}
+        {'About'}
       </Link>
       <Link
+        color="inherit"
         variant="h6"
         underline="none"
-        href="/premium-themes/onepirate/sign-up/"
+        href="#portfolio"
+        onClick={() => setCurrentPage(pages[1])}
+        className={`${currentPage === "Portfolio" && "navActive"}`}
         sx={navLink}
       >
-        {'Sign Up'}
+        {'Portfolio'}
+      </Link>
+      <Link
+        color="inherit"
+        variant="h6"
+        underline="none"
+        href="#contact"
+        onClick={() => setCurrentPage(pages[2])}
+        className={`${currentPage === "Contact" && "navActive"}`}
+        sx={navLink}
+      >
+        {'Contact'}
+      </Link>
+      <Link
+        color="inherit"
+        variant="h6"
+        underline="none"
+        href="#resume"
+        onClick={() => setCurrentPage(pages[3])}
+        className={`${currentPage === "Resume" && "navActive"}`}
+        sx={navLink}
+      >
+        {'Resume'}
       </Link>
     </div>
   );

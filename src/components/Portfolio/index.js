@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {Button, Card, CardActions, CardContent, CardMedia, Grid, Typography, Container} from '@mui/material';
 
 export default function Portfolio() {
@@ -65,7 +65,7 @@ export default function Portfolio() {
                 <Typography gutterBottom variant="h5" component="h2">
                     {portfolio.title}
                 </Typography>
-                <Typography>
+                <Typography variant="body2" color="text.secondary">
                     {portfolio.description}
                 </Typography>
                 </CardContent>
