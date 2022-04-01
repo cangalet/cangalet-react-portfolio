@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import logo from '../../logo.svg';
 import { AppBar, Toolbar, Box } from '@mui/material';
 import Link from '@mui/material/Link';
@@ -20,7 +20,7 @@ function Header(props) {
           <Link
             variant="h6"
             underline="none"
-            href="/"
+            href="/cangalet-react-portfolio"
           >
             {<img src={logo} className="App-logo" style={{ height: 60, width: 60 }} alt="logo" />} 
           </Link>

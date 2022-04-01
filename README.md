@@ -22,8 +22,8 @@ _Follow these steps to locally run this app:_
 
 You can view this webpage here: https://cangalet.github.io/cangalet-react-portfolio
 
-![screenshot](assets/images/screenshot.png)
+![screenshot](src/assets/img/screenshot.png)
 
 ## Links
 
-Github Link: https://github.com/cangalet/cangalet-react-portfolio
+Github Link: https://github.com/cangalet/cangalet-react-portfolioy

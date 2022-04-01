@@ -35,7 +35,7 @@ export default function Portfolio() {
         {
             img: 'https://res.cloudinary.com/dddcuw7qw/image/upload/v1648776745/cangalet-portfolio/Photo-Port-screenshot_sxo9ms.png',
             title: 'Photo Port',
-            description: 'Coding Bootcamp Project 1: Web application where an end user is able to search for a movie or tv show and see which streaming service that media is available to view on.',
+            description: 'First introduction to using React, this is a web application that dynamically generates photo galleries based on user input in the navbar',
             repo: 'https://github.com/cangalet/photo-port',
             live: 'https://cangalet.github.io/photo-port/'
         },
