@@ -1,7 +1,11 @@
 import React from "react";
 import {Button, Card, CardContent, CardMedia, Grid, Typography, Container, Box} from '@mui/material';
+import myResume from '../../assets/Angalet_Chris_Resume.pdf'
 
-export default function Portfolio() {
+export default function Resume() {
+    const downloadFile = () => {
+        window.open(myResume)
+      }
     const skills = [
         {
             name: 'HTML',
@@ -80,10 +84,11 @@ export default function Portfolio() {
                 ))}
             </Grid>
             <Button
-              href="../../assets/Angalet_Chris_Resume.pdf"
-              target="_blank"
-              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+                type="submit"
+                onClick={downloadFile}
+                variant="contained"
+                color="secondary"
+                sx={{ mt: 3, mb: 2 }}
             >
               Resume
             </Button>

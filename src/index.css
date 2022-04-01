@@ -14,7 +14,10 @@ code {
 
 .navActive {
   color: white !important;
-  border-radius: 8px;
-  background-color: #BF8F00;
+  background-color: #d9a200 !important;
   padding: 10px;
+}
+
+.navActive:hover {
+  background-color: #d9a200;
 }

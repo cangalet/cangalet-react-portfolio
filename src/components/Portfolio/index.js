@@ -70,8 +70,8 @@ export default function Portfolio() {
                 </Typography>
                 </CardContent>
                 <CardActions>
-                <Button color="secondary" size="small" href={portfolio.repo} target="_blank">Repo</Button>
-                <Button color="secondary" size="small" href={portfolio.live} target="_blank">Live</Button>
+                <Button variant="contained" size="small" href={portfolio.repo} target="_blank">Repo</Button>
+                <Button variant="contained" size="small" href={portfolio.live} target="_blank">Live</Button>
                 </CardActions>
             </Card>
             </Grid>

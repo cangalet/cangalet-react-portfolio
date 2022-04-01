@@ -95,6 +95,7 @@ function Contact() {
               data-testid="button"
               fullWidth
               variant="contained"
+              color="secondary"
               sx={{ mt: 3, mb: 2 }}
             >
               Submit

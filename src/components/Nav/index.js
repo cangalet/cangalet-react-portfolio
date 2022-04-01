@@ -1,10 +1,10 @@
 import React from "react";
-import Link from '@mui/material/Link';
+import Button from '@mui/material/Button';
 
 function Nav(props) {
   const navLink = {
-    fontSize: 16,
-    ml: 3,
+    ml: 1,
+    borderRadius: 2,
   };
   
   const {
@@ -15,8 +15,7 @@ function Nav(props) {
 
   return (
     <div>
-      <Link
-        color="inherit"
+      <Button 
         variant="h6"
         underline="none"
         href="#about"
@@ -25,9 +24,8 @@ function Nav(props) {
         sx={navLink}
       >
         {'About'}
-      </Link>
-      <Link
-        color="inherit"
+      </Button>
+      <Button
         variant="h6"
         underline="none"
         href="#portfolio"
@@ -36,9 +34,8 @@ function Nav(props) {
         sx={navLink}
       >
         {'Portfolio'}
-      </Link>
-      <Link
-        color="inherit"
+      </Button>
+      <Button
         variant="h6"
         underline="none"
         href="#contact"
@@ -47,9 +44,8 @@ function Nav(props) {
         sx={navLink}
       >
         {'Contact'}
-      </Link>
-      <Link
-        color="inherit"
+      </Button>
+      <Button
         variant="h6"
         underline="none"
         href="#resume"
@@ -58,7 +54,7 @@ function Nav(props) {
         sx={navLink}
       >
         {'Resume'}
-      </Link>
+      </Button>
     </div>
   );
 }
