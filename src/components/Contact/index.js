@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import {Box, TextField, Button, Container, Typography} from '@mui/material';
 import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
@@ -34,29 +34,74 @@ function Contact() {
   };
 
   return (
-    <section>
-      <h1 data-testid="h1tag">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-        <button data-testid="button" type="submit">Submit</button>
-      </form>
-    </section>
+    <Container sx={{ py: 8 }} maxWidth="md">
+      <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          <Typography component="h1" variant="h5">
+            Contact me
+          </Typography>
+          <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              id="name"
+              label="Name:"
+              name="name"
+              defaultValue={name}
+              onBlur={handleChange} 
+              autoFocus
+              variant="filled"
+            />
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              name="email"
+              defaultValue={email}
+              onBlur={handleChange}
+              label="Email address:"
+              type="text"
+              id="email"
+              variant="filled"
+            />
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              name="message"
+              defaultValue={message}
+              onBlur={handleChange} 
+              label="Message:"
+              id="message"
+              multiline
+              rows={4}
+              variant="filled"
+            />
+            <Typography component="h6" variant="body2">
+              {errorMessage && (
+                <div>
+                  <p className="error-text">{errorMessage}</p>
+                </div>
+              )}
+            </Typography>
+            <Button
+              type="submit"
+              data-testid="button"
+              fullWidth
+              variant="contained"
+              sx={{ mt: 3, mb: 2 }}
+            >
+              Submit
+            </Button>
+          </Box>
+        </Box>
+    </Container>
   );
 }
 

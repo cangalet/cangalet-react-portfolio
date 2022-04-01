@@ -48,7 +48,9 @@ export default function App() {
         sx={{
           bgcolor: 'background.paper',
           pt: 16,
-          pb: 6,
+          display: 'flex',
+          flexDirection: 'column',
+          minHeight: '100vh',
         }}
       >
         <Container sx={{ py: 8 }} maxWidth="md">
@@ -61,8 +63,8 @@ export default function App() {
         {/* End About unit */}
         </main>
         </Container>
+        <Footer></Footer>
       </Box>
-      <Footer></Footer>
     </ThemeProvider>
   );
 }

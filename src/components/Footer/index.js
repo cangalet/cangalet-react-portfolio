@@ -5,7 +5,6 @@ import HikingIcon from '@mui/icons-material/Hiking';
 import {Box, Grid} from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
 
 export default function Footer() {
     const footerIconStyle = {
