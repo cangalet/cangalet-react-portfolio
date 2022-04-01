@@ -1,22 +1,16 @@
 {
   "files": {
     "main.css": "/cangalet-react-portfolio/static/css/main.58930845.css",
-    "main.js": "/cangalet-react-portfolio/static/js/main.37574244.js",
+    "main.js": "/cangalet-react-portfolio/static/js/main.d55815f1.js",
     "static/js/787.f9be751c.chunk.js": "/cangalet-react-portfolio/static/js/787.f9be751c.chunk.js",
-    "static/media/StreamView-screenshot.png": "/cangalet-react-portfolio/static/media/StreamView-screenshot.b64e1d89719d3c54bb67.png",
-    "static/media/horiseon_Screenshot.png": "/cangalet-react-portfolio/static/media/horiseon_Screenshot.c0eaeeb14d1b79f5040c.png",
-    "static/media/run-buddy_Screenshot.png": "/cangalet-react-portfolio/static/media/run-buddy_Screenshot.92f82d9f16872d88724e.png",
-    "static/media/LearnIt-screenshot.png": "/cangalet-react-portfolio/static/media/LearnIt-screenshot.9aca141ff20e6fbcd51a.png",
-    "static/media/password-generator_Screenshot.png": "/cangalet-react-portfolio/static/media/password-generator_Screenshot.d74b31a8287e9474890c.png",
-    "static/media/robot-gladiator_Screenshot.png": "/cangalet-react-portfolio/static/media/robot-gladiator_Screenshot.a19e9fbe25ed4e7ae18b.png",
     "static/media/logo.svg": "/cangalet-react-portfolio/static/media/logo.75f9b9193095b3931e3416940ae6bf44.svg",
     "index.html": "/cangalet-react-portfolio/index.html",
     "main.58930845.css.map": "/cangalet-react-portfolio/static/css/main.58930845.css.map",
-    "main.37574244.js.map": "/cangalet-react-portfolio/static/js/main.37574244.js.map",
+    "main.d55815f1.js.map": "/cangalet-react-portfolio/static/js/main.d55815f1.js.map",
     "787.f9be751c.chunk.js.map": "/cangalet-react-portfolio/static/js/787.f9be751c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.58930845.css",
-    "static/js/main.37574244.js"
+    "static/js/main.d55815f1.js"
   ]
 }
