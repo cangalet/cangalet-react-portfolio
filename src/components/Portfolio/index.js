@@ -5,6 +5,13 @@ export default function Portfolio() {
 
     const portfolio = [
         {
+            img: 'https://res.cloudinary.com/dddcuw7qw/image/upload/v1648776305/cangalet-portfolio/StreamView-screenshot_ukicq7.png',
+            title: 'Streamview',
+            description: 'Coding Bootcamp Project 1: Web application where an end user is able to search for a movie or tv show and see which streaming service that media is available to view on.',
+            repo: 'https://github.com/emdok/bang-imdb',
+            live: 'https://emdok.github.io/bang-imdb/'
+        }, 
+        {
             img: 'https://res.cloudinary.com/dddcuw7qw/image/upload/v1648776426/cangalet-portfolio/LearnIt-screenshot_w7jcvf.png',
             title: 'Learn-IT',
             description: 'Coding Bootcamp Project 2: An interactive educational forum for exploring web development languages!',
@@ -12,11 +19,11 @@ export default function Portfolio() {
             live: 'https://damp-journey-96412.herokuapp.com/'
         }, 
         {
-            img: 'https://res.cloudinary.com/dddcuw7qw/image/upload/v1648776305/cangalet-portfolio/StreamView-screenshot_ukicq7.png',
-            title: 'Streamview',
-            description: 'Coding Bootcamp Project 1: Web application where an end user is able to search for a movie or tv show and see which streaming service that media is available to view on.',
-            repo: 'https://github.com/emdok/bang-imdb',
-            live: 'https://emdok.github.io/bang-imdb/'
+            img: 'https://res.cloudinary.com/dddcuw7qw/image/upload/v1650555906/cangalet-portfolio/asteroids-screenshot_qujjq1.png',
+            title: 'NASAteroids',
+            description: 'Coding Bootcamp Project 3: NASAteroids (NASA + Asteroids), is a recreation of the 1979 Atari game built in React. This application utilizes MUI components and an NES-style CSS frame work for UI, MongoDB and GraphQL for database models and API queries.',
+            repo: 'https://github.com/ChrisKurz098/NASAteroids',
+            live: 'https://nasteroids.herokuapp.com/'
         }, 
         {
             img: 'https://res.cloudinary.com/dddcuw7qw/image/upload/v1648776863/cangalet-portfolio/Weather-Dashboard-screenshot_qgqfq5.png',
@@ -31,13 +38,6 @@ export default function Portfolio() {
             description: 'Welcome to my code quiz built using JavaScript, HTML, and CSS. Go ahead and see how well you can fair in the alloted time.',
             repo: 'https://github.com/cangalet/CHLG-Code-Quiz',
             live: 'https://cangalet.github.io/CHLG-Code-Quiz/'
-        },
-        {
-            img: 'https://res.cloudinary.com/dddcuw7qw/image/upload/v1648776745/cangalet-portfolio/Photo-Port-screenshot_sxo9ms.png',
-            title: 'Photo Port',
-            description: 'First introduction to using React, this is a web application that dynamically generates photo galleries based on user input in the navbar',
-            repo: 'https://github.com/cangalet/photo-port',
-            live: 'https://cangalet.github.io/photo-port/'
         },
         {
             img: 'https://res.cloudinary.com/dddcuw7qw/image/upload/v1648776269/cangalet-portfolio/cangalet-screenshot_pszzk5.png',
