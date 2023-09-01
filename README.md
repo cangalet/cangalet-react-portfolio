@@ -26,4 +26,4 @@ You can view this webpage here: https://cangalet.github.io/cangalet-react-portfo
 
 ## Links
 
-Github Link: https://github.com/cangalet/cangalet-react-portfolioy
+Github Link: https://github.com/cangalet/cangalet-react-portfolio
