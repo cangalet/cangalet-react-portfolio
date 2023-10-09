@@ -49,9 +49,24 @@
         window.addEventListener("onEmbeddedMessagingReady", () => {
           console.log("Received the onEmbeddedMessagingReady event…");
 
+          // Manually call the UTM Cookie Replicator, in case there's URL Parameters
+          window.FourSite.runUtmzzCookieReplicator(document);
+
+          // Read UTM Cookie
+          var cookie = window.FourSite.getCampaignDataToSalesforceForm();
+
           // Send data to Salesforce
           embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-            "URL" : window.location.href
+            "URL" : window.location.href,
+            "Operating_Company" : "Agriculture & Turf",
+            "Campaign_Source" : cookie.utmcsr,
+            "Campaign_Medium" : cookie.utmcmd,
+            "Campaign_Name" : cookie.utmccn,
+            "Google_Click_ID" : cookie.utmgclid,
+            "Facebook_Click_ID" : cookie.utmcampaign_id,
+            "Microsoft_Click_ID" : cookie.utmmsclkid,
+            "Stackadapt_Click_ID" : cookie.utmcampaignId,
+            "Model" : model,
           });
 
           // Remove any items from the previous list that you don't want to send
