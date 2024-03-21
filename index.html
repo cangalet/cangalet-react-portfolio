@@ -50,35 +50,35 @@
           console.log("Received the onEmbeddedMessagingReady event…");
 
           // Manually call the UTM Cookie Replicator, in case there's URL Parameters
-          //window.FourSite.runUtmzzCookieReplicator(document);
+          window.FourSite.runUtmzzCookieReplicator(document);
 
           // Read UTM Cookie
-          //var cookie = window.FourSite.getCampaignDataToSalesforceForm();
+          var cookie = window.FourSite.getCampaignDataToSalesforceForm();
 
           // Send data to Salesforce
           embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
             "URL" : window.location.href,
             "Operating_Company" : "Agriculture and Turf",
-            //"Campaign_Source" : cookie.utmcsr,
-            //"Campaign_Medium" : cookie.utmcmd,
-            //"Campaign_Name" : cookie.utmccn,
-            //"Google_Click_ID" : cookie.utmgclid,
-            //"Facebook_Click_ID" : cookie.utmcampaign_id,
-            //"Microsoft_Click_ID" : cookie.utmmsclkid,
-            //"Stackadapt_Click_ID" : cookie.utmcampaignId,
-            //"Model" : model
+            "Campaign_Source" : cookie.utmcsr,
+            "Campaign_Medium" : cookie.utmcmd,
+            "Campaign_Name" : cookie.utmccn,
+            "Google_Click_ID" : cookie.utmgclid,
+            "Facebook_Click_ID" : cookie.utmcampaign_id,
+            "Microsoft_Click_ID" : cookie.utmmsclkid,
+            "Stackadapt_Click_ID" : cookie.utmcampaignId,
+            "Model" : model // Trying to pass in the Model () from the website that passes into the existing forms to pass into this value into Salesforce for the Chat
           });
 
           // Remove any items from the previous list that you don't want to send
           embeddedservice_bootstrap.prechatAPI.removeHiddenPrechatFields(["Customer_ID"]);
         });
   
-        embeddedservice_bootstrap.init(
-          '00D740000000Mnh',
-          'Pap_Chat_PMAT_EmbeddedService',
-          'https://pape--devsales.sandbox.my.site.com/ESWPapChatPMATEmbedded1691786926770',
+          embeddedservice_bootstrap.init(
+            '00D770000000NDp',
+            'PMAT_Pape_Chat',
+            'https://pape--chatbotdev.sandbox.my.site.com/ESWPMATPapeChat1699466810630',
           {
-            scrt2URL: 'https://pape--devsales.sandbox.my.salesforce-scrt.com'
+            scrt2URL: 'https://pape--chatbotdev.sandbox.my.salesforce-scrt.com'
           }
         );
       } catch (err) {
@@ -86,8 +86,11 @@
       }
     };
   </script>
-  <script type='text/javascript' src='https://pape--devsales.sandbox.my.site.com/ESWPapChatPMATEmbedded1691786926770/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+  <script type='text/javascript' src='https://pape--chatbotdev.sandbox.my.site.com/ESWPMATPapeChat1699466810630/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
   
   
   </body>
 </html>
+
+
+
