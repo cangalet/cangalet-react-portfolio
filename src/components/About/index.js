@@ -13,23 +13,22 @@ export default function About() {
           color="text.primary"
           gutterBottom
         >
-          HI! 👋 I'M <span>CHRIS ANGALET</span>
+          HI! 👋 I'M <span>CHRIS ANGALET</span> (he/him)
         </Typography>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={3}>
           <Card sx={{ maxWidth: 850 }}>
             <CardMedia
                 component="img"
                 height="100%"
-                image="https://res.cloudinary.com/dddcuw7qw/image/upload/v1648846055/cangalet-portfolio/Chris-Angalet_Headshot_ptp3el.jpg"
+                image="https://res.cloudinary.com/dddcuw7qw/image/upload/v1714077070/cangalet-portfolio/Chris-Angalet_Headshot_ptp3el.jpg"
                 alt="Chris Angalet"
               />
             </Card>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={9}>
             <Typography variant="body1" align="center" color="text.secondary" paragraph>
-            I'm a currently working as a Salesforce Administrator at Papé Group and have my Salesforce Administrator Certification and in pursuit of additional certifications.  I'm currently enrolled in the University of Oregon's FullStack Javascript Web Development Bootcamp to get a better understanding and experience with coding languages and processes.
-            A sales operations professional, learning Salesforce and software development. 
+            I'm an 8x Salesforce Certified Administrator with 4+ years of experience working within the Salesforce ecosystem.  I've specialized on Sales Cloud and Marketing Cloud.  In addition I've expanded my knowledge and understanding of coding languages and software development methodologies by completing the the University of Oregon's FullStack Javascript Web Development Bootcamp. 
           </Typography>
           <Typography variant="body1" align="center" color="text.secondary" paragraph>
             Feel free to: check out my resume, learn a little more about me, or get in touch.
