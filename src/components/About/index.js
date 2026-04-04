@@ -28,8 +28,7 @@ export default function About() {
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography variant="body1" align="center" color="text.secondary" paragraph>
-            I'm a currently working as a Salesforce Administrator at Papé Group and have my Salesforce Administrator Certification and in pursuit of additional certifications.  I'm currently enrolled in the University of Oregon's FullStack Javascript Web Development Bootcamp to get a better understanding and experience with coding languages and processes.
-            A sales operations professional, learning Salesforce and software development. 
+            I'm the Senior Salesforce Administrator at Precoa with nearly 7 years of experience across the Salesforce ecosystem. He has held diverse roles spanning Sales Cloud and Marketing Cloud Engagement administration, bringing a well-rounded perspective to both CRM strategy and marketing automation. Most recently, Christopher has expanded his expertise into Data Cloud implementation, positioning him at the forefront of Salesforce's next generation of data-driven customer experiences.. 
           </Typography>
           <Typography variant="body1" align="center" color="text.secondary" paragraph>
             Feel free to: check out my resume, learn a little more about me, or get in touch.
