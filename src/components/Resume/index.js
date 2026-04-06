@@ -9,7 +9,7 @@ export default function Resume() {
     const certs = [
         {
             name: 'Administrator',
-            icon: 'https://res.cloudinary.com/dddcuw7qw/image/upload/v1714077917/cangalet-portfolio/Certifications/2021-03_Badge_SF-Certified_Advanced-Administrator_High-Res_azt5v8.png,
+            icon: 'https://res.cloudinary.com/dddcuw7qw/image/upload/v1714077917/cangalet-portfolio/Certifications/2021-03_Badge_SF-Certified_Advanced-Administrator_High-Res_azt5v8.png',
         }, 
         {
             name: 'Advanced Administrator',
@@ -97,14 +97,14 @@ export default function Resume() {
             </Typography>
             <Grid container spacing={4} sx={{ mt: 1 }}>
                 {certs.map((cert) => (
-                    <Grid item key={skill.cert} xs={3} sm={2} md={2}>
+                    <Grid item key={cert.name} xs={3} sm={2} md={2}>
                     <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center',
                         alignItems: 'center' }}
                     >
                         <CardMedia
                         component="img"
-                        sx={{ width: 75, p: 2 }}
+                        sx={{ width: 125, p: 2 }}
                         image={cert.icon}
                         alt={cert.name}
                         />
