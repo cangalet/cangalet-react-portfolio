@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/cangalet-react-portfolio/static/css/main.1cd2faf6.css",
-    "main.js": "/cangalet-react-portfolio/static/js/main.69675f55.js",
+    "main.js": "/cangalet-react-portfolio/static/js/main.7eed037e.js",
     "static/js/453.3e91f38d.chunk.js": "/cangalet-react-portfolio/static/js/453.3e91f38d.chunk.js",
     "static/media/Angalet_Chris_Resume.pdf": "/cangalet-react-portfolio/static/media/Angalet_Chris_Resume.70e51642be0eeeb657fc.pdf",
     "static/media/logo.svg": "/cangalet-react-portfolio/static/media/logo.75f9b9193095b3931e3416940ae6bf44.svg",
     "index.html": "/cangalet-react-portfolio/index.html",
     "main.1cd2faf6.css.map": "/cangalet-react-portfolio/static/css/main.1cd2faf6.css.map",
-    "main.69675f55.js.map": "/cangalet-react-portfolio/static/js/main.69675f55.js.map",
+    "main.7eed037e.js.map": "/cangalet-react-portfolio/static/js/main.7eed037e.js.map",
     "453.3e91f38d.chunk.js.map": "/cangalet-react-portfolio/static/js/453.3e91f38d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1cd2faf6.css",
-    "static/js/main.69675f55.js"
+    "static/js/main.7eed037e.js"
   ]
 }
